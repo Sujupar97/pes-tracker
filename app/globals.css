@@ -10,7 +10,8 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 210 100% 50%; /* Vibrant Blue like iOS */
+    --primary: 210 100% 50%;
+    /* Vibrant Blue like iOS */
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -51,8 +52,9 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: var(--border);
   }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
@@ -64,6 +66,7 @@
   .glass {
     @apply bg-white/10 dark:bg-black/10 backdrop-blur-lg border border-white/20 dark:border-white/10;
   }
+
   .glass-card {
     @apply bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-xl;
   }
