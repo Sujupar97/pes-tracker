@@ -1,8 +1,7 @@
 "use client"
 
 import { MatchCard } from "@/components/matches/match-card"
-import { Input } from "@/components/ui/input"
-// Need to create Input component or use simple input
+// Used native input below
 import { Search, Filter } from "lucide-react"
 
 export default function MatchesPage() {
